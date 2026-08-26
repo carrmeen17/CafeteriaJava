@@ -1,16 +1,18 @@
-public class Producto implements Descontable{
+public class Bebida extends Producto {
 
-    public Producto(String nombre, double precio, String categoria) {
+    public Bebida(String nombre, double precio, String categoria,String tamano) {
+        super(nombre, precio, categoria);
         this.nombre=nombre;
         this.precio=precio;
         this.categoria=categoria;
+        this.tamano=tamano;
     }
 
     String nombre;
     double precio;
     String categoria;
+    String tamano;
 
-    // comentarios
     public String getNombre() {
 
         return nombre;
@@ -40,17 +42,19 @@ public class Producto implements Descontable{
         this.categoria = categoria;
     }
 
+    public String getTamano() {
+
+        return tamano;
+    }
+
+    public void setTamano(String tamano) {
+
+        this.tamano = tamano;
+    }
+
     @Override
-    public double aplicarDescuento(int descuento) {
-        precio=precio-(precio*descuento/100);
-        return precio;
-    }
-
-
-
     public String mostrarInformacion(){
-        return "Producto: " +nombre +". Precio: " +precio +". Categoría: " +categoria;
+        return "Producto: " +nombre +". Precio: " +precio +". Categoría: " +categoria +". Tamaño: " +tamano;
 
     }
-
 }
