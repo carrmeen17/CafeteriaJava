@@ -7,10 +7,10 @@ public class Ticket {
         this.camarero=camarero;
     }
 
-    Cliente cliente;
-    Camarero camarero;
-    Producto [] productos;
-    int contadorProductos;
+    private Cliente cliente;
+    private Camarero camarero;
+    private Producto [] productos;
+    private int contadorProductos;
 
     public void recorrerProductos(){
         System.out.println("Productos: ");
@@ -35,8 +35,8 @@ public class Ticket {
     public void mostrarDescuentos(){
         for (Producto producto : productos) {
             if (producto.getDescuento() > 0){
-                System.out.println("Descuento aplicado al " +producto.nombre +": " +producto.getDescuento() +"%");
-                System.out.println("Precio final del " +producto.nombre + ":" + producto.aplicarDescuento() +"€");
+                System.out.println("Descuento aplicado al " + producto.getNombre() +": " +producto.getDescuento() +"%");
+                System.out.println("Precio final del " + producto.getNombre() + ":" + producto.aplicarDescuento() +"€");
             }
 
         }
@@ -55,6 +55,5 @@ public class Ticket {
         System.out.println(" ");
         mostrarDescuentos();
 
-//TODO MEJORAR
     }
 }

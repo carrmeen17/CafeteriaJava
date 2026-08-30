@@ -5,8 +5,8 @@ public class Camarero {
         this.codigoEmpleado=codigoEmpleado;
     }
 
-    String nombre;
-    int codigoEmpleado;
+    private String nombre;
+    private int codigoEmpleado;
 
     public String getNombre() {
 

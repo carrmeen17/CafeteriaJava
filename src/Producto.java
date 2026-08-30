@@ -6,12 +6,12 @@ public class Producto implements Descontable{
         this.categoria=categoria;
     }
 
-    String nombre;
-    double precio;
-    String categoria;
-    int descuento = 0;
+    private String nombre;
+    private double precio;
+    private String categoria;
+    private int descuento = 0;
 
-    // comentarios
+    //TODO comentarios
     public String getNombre() {
 
         return nombre;

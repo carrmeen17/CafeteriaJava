@@ -8,10 +8,10 @@ public class Comida extends Producto {
         this.esCaliente=esCaliente;
     }
 
-    String nombre;
-    double precio;
-    String categoria;
-    boolean esCaliente;
+    private String nombre;
+    private double precio;
+    private String categoria;
+    private boolean esCaliente;
 
     public String getNombre() {
 

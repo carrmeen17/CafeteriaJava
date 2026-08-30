@@ -5,8 +5,8 @@ public class Cliente {
         this.telefono=telefono;
     }
 
-    String nombre;
-    String telefono;
+    private String nombre;
+    private String telefono;
 
     public String getNombre() {
         return nombre;
