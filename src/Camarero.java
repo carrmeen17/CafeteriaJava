@@ -1,13 +1,16 @@
 public class Camarero {
 
+// constructores
     public Camarero(String nombre, int codigoEmpleado) {
         this.nombre=nombre;
         this.codigoEmpleado=codigoEmpleado;
     }
 
+// atributos de la clase camarero
     private String nombre;
     private int codigoEmpleado;
 
+//Getters y Setters
     public String getNombre() {
 
         return nombre;
@@ -28,6 +31,7 @@ public class Camarero {
         this.codigoEmpleado = codigoEmpleado;
     }
 
+// métodos
     public String mostrarInformacion(){
         return "Camarero: " +nombre +". Código Empleado: " +codigoEmpleado;
 

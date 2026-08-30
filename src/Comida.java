@@ -1,5 +1,6 @@
 public class Comida extends Producto {
 
+// constructores
     public Comida(String nombre, double precio, String categoria, boolean esCaliente) {
         super(nombre, precio, categoria);
         this.nombre=nombre;
@@ -8,11 +9,14 @@ public class Comida extends Producto {
         this.esCaliente=esCaliente;
     }
 
+// atributos de la clase comida
     private String nombre;
     private double precio;
     private String categoria;
     private boolean esCaliente;
 
+
+//Getters y Setters
     public String getNombre() {
 
         return nombre;
@@ -51,6 +55,8 @@ public class Comida extends Producto {
 
         this.esCaliente = esCaliente;
     }
+
+//métodos
     public String comprobarCaliente (){
         if (esCaliente){
             return "Caliente";
@@ -58,6 +64,8 @@ public class Comida extends Producto {
             return "Frío";
         }
     }
+
+// métodos sobreescrito de su clase padre producto
     @Override
     public String mostrarInformacion(){
         return "Producto: " +nombre +". Precio: " +precio +". Categoría: " +categoria +". Es caliente: " +comprobarCaliente();
