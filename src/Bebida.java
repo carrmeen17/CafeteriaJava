@@ -8,10 +8,10 @@ public class Bebida extends Producto {
         this.tamano=tamano;
     }
 
-    String nombre;
-    double precio;
-    String categoria;
-    String tamano;
+    private String nombre;
+    private double precio;
+    private String categoria;
+    private String tamano;
 
     public String getNombre() {
 
