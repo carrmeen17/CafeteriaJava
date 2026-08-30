@@ -1,5 +1,6 @@
 public class Bebida extends Producto {
 
+// constructores
     public Bebida(String nombre, double precio, String categoria,String tamano) {
         super(nombre, precio, categoria);
         this.nombre=nombre;
@@ -8,11 +9,13 @@ public class Bebida extends Producto {
         this.tamano=tamano;
     }
 
+// atributos de la clase bebida
     private String nombre;
     private double precio;
     private String categoria;
     private String tamano;
 
+//Getters y Setters
     public String getNombre() {
 
         return nombre;
@@ -52,6 +55,7 @@ public class Bebida extends Producto {
         this.tamano = tamano;
     }
 
+// métodos sobreescrito de su clase padre producto
     @Override
     public String mostrarInformacion(){
         return "Producto: " +nombre +". Precio: " +precio +". Categoría: " +categoria +". Tamaño: " +tamano;
