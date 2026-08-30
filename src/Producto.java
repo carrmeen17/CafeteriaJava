@@ -9,6 +9,7 @@ public class Producto implements Descontable{
     String nombre;
     double precio;
     String categoria;
+    int descuento = 0;
 
     // comentarios
     public String getNombre() {
@@ -40,10 +41,26 @@ public class Producto implements Descontable{
         this.categoria = categoria;
     }
 
+    public int getDescuento() {
+
+        return descuento;
+    }
+
+    public void setDescuento(int descuento) {
+
+        this.descuento = descuento;
+    }
+
     @Override
     public double aplicarDescuento(int descuento) {
-        precio=precio-(precio*descuento/100);
-        return precio;
+        this.descuento = descuento;
+       double precioFinal=precio-(precio*descuento/100);
+        return precioFinal;
+    }
+    @Override
+    public double aplicarDescuento() {
+        double precioFinal=precio-(precio*descuento/100);
+        return precioFinal;
     }
 
 
