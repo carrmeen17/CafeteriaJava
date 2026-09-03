@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.cafeteria'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+javadoc {
+    destinationDir = file('docs')
+}
